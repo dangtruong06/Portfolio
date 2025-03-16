@@ -143,8 +143,11 @@ nav ul a:active{
 }
 
 .images img{
-    width: 20vw;
+    width: 28vw;
     border-radius: 50px;
+    animation: slideUpDown 2s infinite alternate ease-in;
+    filter: drop-shadow(0 2em 1.5em var(--neonBlue));
+
 }
 #typewriteText{
     overflow: hidden;
@@ -154,7 +157,8 @@ nav ul a:active{
     display: inline-block;
     vertical-align: bottom;
     width: 0; /* Start hidden */
-    animation: type 1s steps(7) infinite alternate, blink 0.6s step-end infinite;
+    letter-spacing: 2px;
+    animation: type 1.5s steps(7) infinite alternate, blink 0.6s step-end infinite;
 }
 
 @keyframes type{
@@ -163,13 +167,19 @@ nav ul a:active{
     }
 
     to{
-        width: 7ch;
+        width: 8ch;
     }
 }
 @keyframes blink{
     50%{
         border-color: transparent;
     }
+}
+
+@keyframes slideUpDown{
+    from{
+        transform: translateY(-20%);
+    };
 }
 
 #projects{
