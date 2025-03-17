@@ -42,7 +42,8 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 20px 10%
+    padding: 20px 10%;
+    box-shadow: 0px 3px 40px var(--neonBlue);
 }
 
 ul{
@@ -69,7 +70,6 @@ nav ul a:active{
 }
 
 #home{
-    border: 2px solid white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -122,6 +122,7 @@ nav ul a:active{
     color: var(--neonBlue);
     font-size: 2em;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .buttons div:hover{
