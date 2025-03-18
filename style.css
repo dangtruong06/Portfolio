@@ -10,7 +10,7 @@
 
 
 :root{
-    --neonBlue: rgb(39, 235, 242);
+    --neonPink: rgb(255, 62, 165);
     --backgroundCol:rgb(32, 37, 54);
 }
 
@@ -27,7 +27,7 @@ section{
 
 .logo{
     font-size: 2.3em;
-    color: var(--neonBlue);
+    color: var(--neonPink);
     transition: 0.3s ease-in-out;
     opacity: 0.8;
     font-weight: 600;
@@ -43,7 +43,7 @@ nav{
     top: 0;
     width: 100%;
     padding: 20px 10%;
-    box-shadow: 0px 3px 40px var(--neonBlue);
+    box-shadow: 0px 3px 40px var(--neonPink);
 }
 
 ul{
@@ -60,13 +60,14 @@ nav ul a{
 
 nav ul a:hover{
     transform: scaleY(1.3);
+    color: var(--neonPink);
 }
 
 nav ul a:active{
     transform: scaleY(2.2);
 }
 #menu{
-    color: white;
+    color: var(--neonPink);
     font-size: 2.5em;
     padding-top: 10px;
     display: none;
@@ -111,7 +112,7 @@ nav ul a:active{
 .buttons i{
     font-size: 3em;
     margin-right: 10px;
-    color: var(--neonBlue);
+    color: var(--neonPink);
     vertical-align: bottom;
 }
 
@@ -119,7 +120,7 @@ nav ul a:active{
     border: 2px solid white;
     padding: 0px 40px;
     border-radius: 15px;
-    color: var(--neonBlue);
+    color: var(--neonPink);
     font-size: 2em;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -146,12 +147,12 @@ nav ul a:active{
 .images img{
     width: 28vw;
     animation: slideUpDown 2s infinite alternate ease-in;
-    filter: drop-shadow(0 2em 1.5em var(--neonBlue));
+    filter: drop-shadow(0 2em 1.5em var(--neonPink));
 
 }
 #typewriteText{
     overflow: hidden;
-    color: var(--neonBlue);
+    color: var(--neonPink);
     white-space: nowrap;
     border-right: 2px solid white; /* Simulates cursor */
     display: inline-block;
@@ -183,7 +184,7 @@ nav ul a:active{
 }
 
 #projects{
-    border: 2px solid var(--neonBlue);
+    border: 2px solid var(--neonPink);
 }
 
 @media(max-width: 900px){
@@ -228,5 +229,4 @@ nav ul a:active{
         gap: 2em;
     }
 
-   
 }
