@@ -6,6 +6,7 @@
     list-style: none;
     font-family: Oswald;
     scroll-behavior: smooth;
+    
 }
 
 
@@ -25,6 +26,7 @@ section{
     padding: 5% 10%;
 }
 
+/* styling for #home section*/
 .logo{
     font-size: 2.3em;
     color: var(--neonPink);
@@ -36,6 +38,10 @@ section{
     opacity: 1;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -44,6 +50,8 @@ nav{
     width: 100%;
     padding: 20px 10%;
     box-shadow: 0px 3px 40px var(--neonPink);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
 }
 
 ul{
@@ -59,12 +67,12 @@ nav ul a{
 }
 
 nav ul a:hover{
-    transform: scaleY(1.3);
+    border-bottom: 3px solid var(--neonPink);
     color: var(--neonPink);
 }
 
 nav ul a:active{
-    transform: scaleY(2.2);
+    transform: scaleY(1.2);
 }
 #menu{
     color: var(--neonPink);
@@ -87,11 +95,13 @@ nav ul a:active{
     flex-direction: column;
     max-width: 50%;
     gap: 1em;
+    min-width: 400px;
 }
 
 .info-box h1{
     font-size: 4em;
     font-weight: 700;
+    text-wrap:nowrap;
 }
 
 .info-box h3{
@@ -183,10 +193,6 @@ nav ul a:active{
     };
 }
 
-#projects{
-    border: 2px solid var(--neonPink);
-}
-
 @media(max-width: 900px){
     #menu{
         display: block;
@@ -223,10 +229,21 @@ nav ul a:active{
     .images img{
         display:none;
     }
-    .info-box{
-        max-width: 100%;
-        right: 0;
-        gap: 2em;
-    }
 
+}
+
+/* styling for About page */
+#about{
+    padding: 5% 0;
+}
+header{
+    text-align: center;
+    padding-top: 70px;
+}
+
+header h1{
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 3em;
 }
