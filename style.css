@@ -233,17 +233,54 @@ nav ul a:active{
 }
 
 /* styling for About page */
-#about{
-    padding: 5% 0;
+#about-box{
+    padding: 5% 5%;
 }
-header{
+.about-row{
+    display: flex;
+    justify-content: center;
+}
+.about-header{
+    padding-top: 170px;
     text-align: center;
-    padding-top: 70px;
+    font-size: 1.5em;
+    color: white;
 }
 
-header h1{
+.column-middle{
+    float: left;
+    width: 45%;
+    padding: 20px;
     color: white;
-    letter-spacing: 3px;
-    font-weight: 400;
-    font-size: 3em;
+    font-size: 1.4em;
+    min-width: 400px;
+
+}
+.column-side{
+    width: 27%;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.column-side img{
+    position: absolute;
+    width: 70%;
+    border-radius: 40%;
+}
+
+
+.column-side img:nth-child(2){
+    z-index: 2;
+    top: 50%;
+
+}
+
+.column-side img:nth-child(1){
+    z-index: 1;
+    left: 20%;
+    bottom: 10%;
+    right: 50%;
 }
