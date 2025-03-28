@@ -12,7 +12,7 @@
 
 :root{
     --neonPink: rgb(255, 62, 165);
-    --backgroundCol:rgb(32, 37, 54);
+    --backgroundCol:rgb(29, 25, 25);
 }
 
 
@@ -74,6 +74,35 @@ nav ul a:hover{
 nav ul a:active{
     transform: scaleY(1.2);
 }
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 4em 4em;
+    color: white;
+    max-width: 100vw;
+    margin: auto;
+    background-color: rgba(255, 62, 165, 0.358);
+    
+}
+
+.footer-items{
+    display:flex;
+    flex-direction: row;
+    font-weight: 100;
+
+}
+.footer-items h2{
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.footer-items i{
+    font-size: 2em;
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
 #menu{
     color: var(--neonPink);
     font-size: 2.5em;
@@ -109,7 +138,7 @@ nav ul a:active{
 }
 
 .info-box p{
-    font-size: 1.2em;
+    font-size: 1.7em;
     font-weight: 300;
 }
 .buttons{
@@ -234,11 +263,15 @@ nav ul a:active{
 
 /* styling for About page */
 #about-box{
-    padding: 5% 5%;
-}
-.about-row{
+    padding: 5% 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#about-box h1{
+    font-size: 3em;
 }
 .about-header{
     padding-top: 170px;
@@ -248,39 +281,14 @@ nav ul a:active{
 }
 
 .column-middle{
-    float: left;
-    width: 45%;
+    width: 50%;
     padding: 20px;
     color: white;
-    font-size: 1.4em;
+    font-size: 1.5em;
     min-width: 400px;
 
 }
-.column-side{
-    width: 27%;
-    float: left;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
 
-.column-side img{
-    position: absolute;
-    width: 70%;
-    border-radius: 40%;
-}
-
-
-.column-side img:nth-child(2){
-    z-index: 2;
-    top: 50%;
-
-}
-
-.column-side img:nth-child(1){
-    z-index: 1;
-    left: 20%;
-    bottom: 10%;
-    right: 50%;
+.column-middle h4{
+    color: var(--neonPink);
 }
