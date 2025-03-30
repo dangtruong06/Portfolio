@@ -189,7 +189,7 @@ footer{
 }
 
 .buttons div{
-    border: 2px solid white;
+    border: 1px solid var(--neonPink);
     padding: 0px 40px;
     border-radius: 15px;
     color: var(--neonPink);
@@ -200,6 +200,7 @@ footer{
 
 .buttons div:hover{
     background-color: white;
+    color: var(--backgroundCol);
     
 }
 
@@ -218,8 +219,7 @@ footer{
 
 .images img{
     width: 28vw;
-    animation: slideUpDown 2s infinite alternate ease-in;
-    animation: appear 2s ease-in-out forwards;
+    animation: slideUpDown 2s infinite alternate ease-in, appear 2s ease-in-out forwards;;
     filter: drop-shadow(0 2em 1.5em var(--neonPink));
 }
 
@@ -309,7 +309,17 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: appear 1s ease-in-out forwards;
+    
+}
 
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #about-box h1{
@@ -332,4 +342,55 @@ footer{
 }
 .column-middle h4{
     color: var(--neonPink);
+}
+
+#skills{
+    display: flex;
+    align-items: center; 
+    gap: 3em;
+    color: var(--neonPink);
+}
+
+.skills-title{
+    min-width: 50%;
+    text-align: center;
+    font-size: 9em;
+    letter-spacing: 3px;
+}
+
+.skills-title h1{
+    display: inline-block;
+    border-bottom: 5px solid var(--neonPink);
+}
+
+.skills-box{
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.skills-box ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    
+    align-items: baseline;
+}
+
+.skills-box ul li{
+    letter-spacing: 4px;
+    transition: 0.3s ease-in-out;
+}
+
+.skills-box ul li:hover{
+    transform: translateX(10px);
+}
+
+
+.skills-box ul li i{
+    margin-right: 10px;
+    color: white;
 }
