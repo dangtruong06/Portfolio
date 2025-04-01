@@ -394,3 +394,59 @@ footer{
     margin-right: 10px;
     color: white;
 }
+
+/* styling for Contact page */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact h1{
+    color: var(--neonPink);
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact-container{
+    display: flex;
+    min-width: 43%;
+    height: 30%;
+    box-shadow: 0px 3px 40px var(--neonPink);
+    border-radius: 20px;
+    padding: 1% 5%;
+
+}
+.contact-container form label{
+    font-size: 2rem;
+    margin-top: 100px;
+    color: var(--neonPink);
+    
+}
+.contact-container form input{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.contact-container form textarea{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.contact-container form input:focus{
+    border: 1px solid var(--neonPink);
+}
+.contact-container .btns{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.contact-container .btns input{
+    width: 30%;
+    text-align: center;
+    background-color: var(--neonPink);
+}
