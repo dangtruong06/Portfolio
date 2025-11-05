@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my website portfolio: https://dangtruong06.github.io/Portfolio/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangtruong06/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangtruong06/Portfolio/issues"
+  },
+  "homepage": "https://github.com/dangtruong06/Portfolio#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

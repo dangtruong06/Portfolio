@@ -127,6 +127,7 @@ footer{
     gap: 1em;
     min-width: 400px;
     opacity: 1;
+
 }
 
 @keyframes fadeRight{
@@ -176,7 +177,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 1.5em;
-    max-width: 100%;
+    max-width: 100%;    
     flex-wrap:wrap;
     position: relative;
     animation: fadeRight 2s ease-in-out forwards;
@@ -376,7 +377,6 @@ footer{
     display: flex;
     flex-direction: column;
     font-size: 3em;
-    
     align-items: baseline;
 }
 
